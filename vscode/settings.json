@@ -1,0 +1,81 @@
+{
+    "github.copilot.enable": {
+        "*": false, // Disable Copilot for all languages
+        "markdown": true // Enable Copilot for Markdown only
+    },
+    // VIM Settings
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    // to improve performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    // c/c++
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.autocomplete": "Default", 
+    "C_Cpp.formatting": "Default", 
+    "C_Cpp.clang_format_fallbackStyle": "file",
+    "makefile.configureOnOpen": true,
+    // python
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
+    // Font settings
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    // discord presence for employers/contracts
+    "discord.detailsIdling": "",
+    "discord.largeImageIdling": "",
+    "discord.removeDetails": true,
+    "discord.removeTimestamp": true,
+    //"discord.lowerDetailsEditing": {workspace}  // Default Settings
+    "discord.lowerDetailsEditing": "Workspace: Work"
+    //"discord.lowerDetailsEditing": "Workspace: GA"
+    //"discord.lowerDetailsEditing": "Workspace: Personal"
+}
